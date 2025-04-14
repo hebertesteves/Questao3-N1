@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Strings do Projeto -->
+    <string name="btnTelaCadastro">Quero me Cadastrar</string>
+    <string name="appTituloCadastro">Criar Conta</string>
+    <string name="appTituloNome"> Nome </string>
+    <string name="appMascaraNome"> Digite seu nome </string>
+    <string name="btnCadastrar">Cadastrar</string>
+    <string name="appTituloConfirmacao">Confirmação</string>
+    <string name="btnVoltar">Voltar</string>
+    <string name="textResultado">-------</string>
+
+    <!-- Cores do Projeto -->
+    <color name="appColorAmarelo">#FFC700</color>>
+    <color name="appColorAzul">#3483FA</color>
+    <color name="appColorPreto">#000000</color>
+    <color name="appColorBranco">#FFFFFF</color>
+
+
+</resources>
