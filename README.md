@@ -24,7 +24,7 @@ Aplicativo de 3 telas que simula o cadastro de clientes da loja virtual **Tem de
 
 ## 💡 Processo de Desenvolvimento
 
-Pratiquei o uso de `Intent`, `Bundle`, `EditText`, `ImageView` e `TextView` dinâmico. Destaque para a troca de dados entre Activities e personalização da mensagem final.
+Pratiquei o uso de `Intent`, `Bundle`, `TextInputLayout`, `ImageView` e `TextView` dinâmico. Destaque para a troca de dados entre Activities e personalização da mensagem final.
 
 ## 📦 Como Executar o App
 
