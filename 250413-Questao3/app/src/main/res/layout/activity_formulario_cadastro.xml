@@ -37,48 +37,58 @@
     </FrameLayout>
 
 
-    <TextView
-        android:id="@+id/tituloNome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="21dp"
-        android:layout_marginBottom="1dp"
-        android:fontFamily="monospace"
-        android:text="@string/appTituloNome"
-        android:textColor="@color/appColorPreto"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/txtNome"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.071"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
-        app:layout_constraintVertical_bias="0.96" />
-
-    <EditText
-        android:id="@+id/txtNome"
-        android:layout_width="360dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="220dp"
-        android:hint="@string/appMascaraNome"
-        android:padding="8dp"
-        android:textColor="@color/appColorPreto"
-        android:textColorHint="@color/appColorPreto"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
-
     <ImageView
         android:id="@+id/imgCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/tituloNome"
+        android:layout_marginTop="36dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout"
         app:srcCompat="@drawable/adicionar_usuario" />
+
+    <TextView
+        android:id="@+id/tituloNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:text="@string/appTituloNome"
+        android:textColor="@color/appColorPreto"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgCadastro" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/campoLayoutNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/appMascaraNome"
+        app:boxStrokeColor="@color/appColorAmarelo"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeWidth="2dp"
+        app:hintTextColor="@color/appColorPreto"
+        app:layout_constraintTop_toBottomOf="@id/tituloNome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNome"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:textColor="@color/appColorPreto"
+            android:textColorHint="@color/appColorPreto" />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <Button
         android:id="@+id/btnCadastrar"
@@ -96,9 +106,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.546" />
+        app:layout_constraintVertical_bias="0.533" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
